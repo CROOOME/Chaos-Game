@@ -1,11 +1,21 @@
+#!/usr/bin/env python
+
+"""
+    2D Chaos Game
+
+"""
+
+__author__ = "Marco Sandoval"
+__license__ = "GPL"
+__version__ = "1.0.1"
+__maintainer__ = "Marco Sandoval"
+__email__ = "marcosandoval68@gmail.com"
+__status__ = "Production"
+
 import matplotlib.pyplot as plt
 import numpy as np
 from collections import namedtuple
 import random
-
-"""
-    2D Chaos Game
-"""
 
 Point = namedtuple('Point', 'x y')
 
