@@ -10,11 +10,11 @@ import random
 Point = namedtuple('Point', 'x y')
 
 
-def mid_point(A, B, portion=2):
-    C = Point()
-    C.x = A.x+B.x/portion
-    C.y = A.y+B.y/portion
-    return C
+def mid_point(a, b, portion=2):
+    c = []
+    c[0] = (a[0] + b[0])/portion
+    c[1] = (a[1] + b[1])/portion
+    return c
 
 
 def build_visual(anchors, moving_point=None,):
@@ -31,20 +31,18 @@ def random_point():
     return [random.randrange(0, 20), random.randrange(0, 20)]
 
 
-def generate_anchor_points(n=2):
+def generate_anchor_points(n=3):
     anchor_points = []
 
     for i in range(n):
         anchor_points.append(random_point())
-
-    print(anchor_points)
 
     return np.array(anchor_points)
 
 
 def generate_starting_point():
     starting_point = random_point()
-    return starting_point
+    return np.array(starting_point)
 
 
 if __name__ == "__main__":
