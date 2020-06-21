@@ -21,7 +21,7 @@ def build_visual(anchors, moving_point=None,):
     print('anchors:', anchors)
     print('moving_point:', moving_point)
 
-    plt.scatter(*anchors.T)
+    plt.scatter(*anchors.T, color='r')
     plt.show()
 
 
