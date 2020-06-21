@@ -32,6 +32,11 @@ def generate_anchor_points(n=2):
     return anchor_points
 
 
+def generate_starting_point():
+    starting_point = Point(x=random.randrange(-10, 10), y=random.randrange(-10, 10))
+    return starting_point
+
+
 if __name__ == "__main__":
     num_anchor_points = 3
     anchor_points = generate_anchor_points(n=num_anchor_points)
