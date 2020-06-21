@@ -13,12 +13,12 @@ def mid_point(A, B, portion=2):
     return C
 
 
-def build_visual(anchors=[], moving_point=None,):
-    #TODO: Build anchor points
-    #TODO: build plt
-
+def build_visual(anchors, moving_point=None,):
     print('anchors:', anchors)
     print('moving_point:', moving_point)
+
+    plt.scatter(*anchors.T)
+    plt.show()
 
 
 def random_point():
@@ -33,7 +33,9 @@ def generate_anchor_points(n=2):
     for i in range(n):
         anchor_points.append(random_point())
 
-    return anchor_points
+    print(anchor_points)
+
+    return np.array(anchor_points)
 
 
 def generate_starting_point():
