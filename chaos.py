@@ -39,13 +39,16 @@ def build_visual(anchors, moving_point=None,):
     plt.scatter(*anchors.T, color='r')
     plt.scatter(*moving_point.T, color='b')
     plt.scatter(*positions.T)
+    plt.title('2D Chaos Game\n steps={}'.format(str(steps)), fontsize=18)
+    plt.xlabel('x-axis')
+    plt.ylabel('y-axis')
     plt.show()
 
 
 def random_point():
     # return Point(x=random.randrange(0, 20), y=random.randrange(0, 20))
 
-    return [random.randrange(0, 20), random.randrange(0, 20)]
+    return [random.uniform(0, 20), random.uniform(0, 20)]
 
 
 def generate_anchor_points(n=3):
