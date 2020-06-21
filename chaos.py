@@ -11,7 +11,7 @@ Point = namedtuple('Point', 'x y')
 
 
 def mid_point(a, b, portion=2):
-    c = []
+    c = [0, 0]
     c[0] = (a[0] + b[0])/portion
     c[1] = (a[1] + b[1])/portion
     return c
