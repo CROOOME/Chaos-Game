@@ -1,4 +1,4 @@
-# Chaos-Game
+# 2D Chaos-Game
 
 ## Rules
     Given a set of anchor points, 
