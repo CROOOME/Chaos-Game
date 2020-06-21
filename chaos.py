@@ -33,6 +33,8 @@ def build_visual(anchors, moving_point=None,):
         new_position = calculate_next_position(anchor, new_position)
         positions.append(new_position)
 
+    anchors = np.array(anchors)
+    moving_point = np.array(moving_point)
     positions = np.array(positions)
     plt.scatter(*anchors.T, color='r')
     plt.scatter(*moving_point.T, color='b')
@@ -52,12 +54,12 @@ def generate_anchor_points(n=3):
     for i in range(n):
         anchor_points.append(random_point())
 
-    return np.array(anchor_points)
+    return anchor_points
 
 
 def generate_starting_point():
     starting_point = random_point()
-    return np.array(starting_point)
+    return starting_point
 
 
 if __name__ == "__main__":
