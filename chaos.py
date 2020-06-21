@@ -18,5 +18,14 @@ def build_visual(anchors=[], moving_point=None,):
     pass
 
 
+def generate_anchor_points(n=2):
+    anchor_points = []
+
+    return anchor_points
+
+
 if __name__ == "__main__":
-    build_visual()
+    num_anchor_points = 3
+    anchor_points = generate_anchor_points(n=num_anchor_points)
+    starting_position = Point() # at random
+    build_visual(anchors=anchor_points, moving_point=starting_position)
