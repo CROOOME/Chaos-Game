@@ -27,7 +27,7 @@ def build_visual(anchors, moving_point=None,):
 
     positions = []
     new_position = moving_point
-    steps = 100
+    steps = 9999
     for i in range(steps):
         anchor = anchors[random.randrange(len(anchors))]
         new_position = calculate_next_position(anchor, new_position)
@@ -36,6 +36,7 @@ def build_visual(anchors, moving_point=None,):
     anchors = np.array(anchors)
     moving_point = np.array(moving_point)
     positions = np.array(positions)
+
     plt.scatter(*anchors.T, color='r')
     plt.scatter(*moving_point.T, color='b')
     plt.scatter(*positions.T)
