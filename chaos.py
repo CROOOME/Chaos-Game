@@ -17,6 +17,10 @@ def mid_point(a, b, portion=2):
     return c
 
 
+def calculate_next_position(anchor, old_position):
+    return mid_point(anchor, old_position)
+
+
 def build_visual(anchors, moving_point=None,):
     print('anchors:', anchors)
     print('moving_point:', moving_point)
@@ -25,11 +29,11 @@ def build_visual(anchors, moving_point=None,):
     new_position = moving_point
     steps = 100
     for i in range(steps):
-        new_position = calculate_next_position(new_position)
+        anchor = anchors[random.randrange(len(anchors))]
+        new_position = calculate_next_position(anchor, new_position)
         positions.append(new_position)
 
     positions = np.array(positions)
-
     plt.scatter(*anchors.T, color='r')
     plt.scatter(*moving_point.T, color='b')
     plt.scatter(*positions.T)
