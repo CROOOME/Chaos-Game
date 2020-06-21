@@ -3,6 +3,10 @@ import numpy as np
 from collections import namedtuple
 import random
 
+"""
+    2D Chaos Game
+"""
+
 Point = namedtuple('Point', 'x y')
 
 
