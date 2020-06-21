@@ -1,6 +1,6 @@
 # Chaos-Game
 
-###Rules
+## Rules
     Given a set of anchor points, 
     an initially randomly placed point
     will move toward the respective anchor point
