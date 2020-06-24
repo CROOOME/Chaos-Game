@@ -6,5 +6,5 @@
 ## Rules
     Given a set of anchor points, 
     an initially randomly placed point
-    will move toward the respective anchor point
-    based on a moving distance  
+    will move toward a randomly selected anchor point
+    based on a moving distance (mid-point) 
