@@ -1,4 +1,4 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/CROOOME/Chaos-Game/master)
+[![Binder](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/CROOOME/Chaos-Game/blob/master/chaos_game.ipynb)
 
 # 2D Chaos-Game
 
